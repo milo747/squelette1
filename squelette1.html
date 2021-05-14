@@ -27,15 +27,12 @@
             background-color: rgb(160, 95, 95);
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
         }
 
         #container4 {
             background-color: rgb(0, 95, 95);
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             flex-grow: 1;
         }
 
@@ -48,40 +45,29 @@
             width: 30%;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             background-color: gainsboro;
         }
 
         .bloc3 {
+            border-radius: 25px;
             background-color: rgb(0, 95, 95);
-            width: 31%;
-            display: flex;
-            flex-direction: row;
-            height: 250px;
+            flex-grow:1;
         }
-
+.imgcontainer{
+    width:auto;
+    padding-top:50%; 
+    border-radius: 25px;
+    /*background-image: url(img/annie.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+    background-color: cornflowerblue;
+}
         @media screen and (max-width: 1024px) {
-            #container2 {
-                flex-direction: column-reverse;
-            }
-
-            #container3 {
-                flex-direction: column;
-            }
-
-            #bloc1 {
-                width: auto;
-            }
-
-            #bloc2 {
-                width: auto;
-                height: 600px;
-            }
-
-            .bloc3 {
-                width: auto;
-
-            }
+            #container2 { flex-direction: column-reverse; }
+            #container3 { flex-direction: column; flex-wrap:unset; }
+            #bloc1 { width: auto; }
+            #bloc2 { width: auto; min-height: 450px; }
+            .bloc3 { width: auto; }
         }
     </style>
     <meta charset="UTF-8">
@@ -97,21 +83,23 @@
             <div id="bloc1">
                 <div style="background-color: blue">Hébergement</div>
                 <div id="container3">
-                    <div class="bloc3"></div>
-                    <div class="bloc3"></div>
-                    <div class="bloc3"></div>
-                    <div class="bloc3"></div>
-                    <div class="bloc3"></div>
-                    <div class="bloc3"></div>
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                </div>
+                <div id="container3">
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
                 </div>
                 <div style="background-color: blue">Afficher plus</div>
             </div>
             <div id="bloc2">
-                <div style="background-color: blue">Afficher plus</div>
+                <div style="background-color: blue">Populaire</div>
                 <div id="container4">
-                    <div style="background-color:rgb(226, 185, 0); flex-grow:1;">&nbsp;</div>
-                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;">&nbsp;</div>
-                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;">&nbsp;</div>
+                    <div style="background-color:rgb(226, 185, 0); flex-grow:1;"></div>
+                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;"></div>
+                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;"></div>
                 </div>
             </div>
         </div>
@@ -119,5 +107,4 @@
         <div style="background-color:gainsboro;">footer</div>
     </div>
 </body>
-
 </html>
