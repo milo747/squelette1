@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style type="text/css">
         * {
             margin: 5px;
             padding: 5px;
             border: solid;
-            box-sizing: border-box
+            box-sizing: border-box;
         }
 
         #container1 {
@@ -51,23 +52,81 @@
         .bloc3 {
             border-radius: 25px;
             background-color: rgb(0, 95, 95);
-            flex-grow:1;
+            flex-grow: 1;
         }
-.imgcontainer{
-    width:auto;
-    padding-top:50%; 
-    border-radius: 25px;
-    /*background-image: url(img/annie.jpg);
+
+        .imgcontainer {
+            width: auto;
+            padding-top: 50%;
+            /*border-radius: 25px;*/
+            /*background-image: url(img/annie.jpg);
     background-size: contain;
     background-repeat: no-repeat;*/
-    background-color: cornflowerblue;
-}
+            background-color: cornflowerblue;
+        }
+
+        .imgcontainer2 {
+            width: auto;
+            padding-top: 150%;
+            /*border-radius: 25px;*/
+            /*background-image: url(img/annie.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+            background-color: cornflowerblue;
+        }
+
+        .imgcontainer3 {
+            width: auto;
+            padding-top: 81.7%;
+            /*border-radius: 25px;*/
+            /*background-image: url(img/annie.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+            background-color: cornflowerblue;
+        }
+
+        .imgcontainer4 {
+            width: auto;
+            padding-top: 50%;
+            background-color: cornflowerblue;
+        }
+
+        .imgcontainer5 {
+            width: auto;
+            padding-top: 65.8%;
+            background-color: cornflowerblue;
+        }
+        .imgcontainer6 {
+            width: 40%;
+            padding-top: 33.3%;
+            background-color: cornflowerblue;
+        }
+        .fullheight{
+            height:calc(100% - 10px);
+        }
+
         @media screen and (max-width: 1024px) {
-            #container2 { flex-direction: column-reverse; }
-            #container3 { flex-direction: column; flex-wrap:unset; }
-            #bloc1 { width: auto; }
-            #bloc2 { width: auto; min-height: 450px; }
-            .bloc3 { width: auto; }
+            #container2 {
+                flex-direction: column-reverse;
+            }
+
+            #container3 {
+                flex-direction: column;
+                flex-wrap: unset;
+            }
+
+            #bloc1 {
+                width: auto;
+            }
+
+            #bloc2 {
+                width: auto;
+                min-height: 450px;
+            }
+
+            .bloc3 {
+                width: auto;
+            }
         }
     </style>
     <meta charset="UTF-8">
@@ -83,28 +142,89 @@
             <div id="bloc1">
                 <div style="background-color: blue">Hébergement</div>
                 <div id="container3">
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
                 </div>
                 <div id="container3">
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
-                    <div class="bloc3"><div class="imgcontainer"></div><div>Texte</div></div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div class="bloc3">
+                        <div class="imgcontainer"></div>
+                        <div>Texte</div>
+                    </div>
                 </div>
                 <div style="background-color: blue">Afficher plus</div>
             </div>
             <div id="bloc2">
                 <div style="background-color: blue">Populaire</div>
                 <div id="container4">
-                    <div style="background-color:rgb(226, 185, 0); flex-grow:1;"></div>
-                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;"></div>
-                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;"></div>
+                    <div style="background-color:rgb(226, 185, 0); flex-grow:1;">
+                         
+                        </div>
+                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;">
+                           
+                    </div>
+                    <div style="background-color:rgb(226, 185, 0);flex-grow:1;">
+                           
+                    </div>
                 </div>
             </div>
         </div>
-        <div style="background-color:gainsboro;">Activités</div>
+        <div class="container" style="background-color:gainsboro;">
+            <div style="background-color: blue">Activités</div>
+            <div id="container2">
+                <div style="background-color:rgb(226, 185, 0); flex-grow:1;">
+                    <div>
+                        <div class="imgcontainer2"></div>
+                        <div>Texte</div>
+                    </div>
+                </div>
+                <div style="background-color:rgb(226, 185, 0);flex-grow:1;">
+                    <div>
+                        <div class="imgcontainer3"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div>
+                        <div class="imgcontainer4"></div>
+                        <div>Texte</div>
+                    </div>
+                </div>
+                <div style="background-color:rgb(226, 185, 0);flex-grow:1;">
+                    <div>
+                        <div class="imgcontainer2"></div>
+                        <div>Texte</div>
+                    </div>
+                </div>
+                <div style="background-color:rgb(226, 185, 0);flex-grow:1;">
+                    <div>
+                        <div class="imgcontainer5"></div>
+                        <div>Texte</div>
+                    </div>
+                    <div>
+                        <div class="imgcontainer5"></div>
+                        <div>Texte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div style="background-color:gainsboro;">footer</div>
     </div>
 </body>
+
 </html>
